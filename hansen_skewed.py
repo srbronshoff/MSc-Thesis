@@ -2,6 +2,10 @@ import numpy as np
 from scipy.special import gamma
 from scipy.stats import t, uniform
 
+# this piece of code is used to obtain the random innovations from the Hansen skewed Student's t-distribution. Please note that this code was copied
+# from an existing package, due to the fact that it was not possible for me to install this package. Therefore I just looked up the source code
+# and copied the pieces that were needed.
+
 class SkewStudent(object):
     def __init__(self, dof, skew):
         self.dof = dof
